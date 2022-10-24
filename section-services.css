@@ -1,0 +1,43 @@
+.service-icon {
+  background-color: rgb(66, 138, 205);
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-radius: 100px;
+  height: 26px;
+  width: 26px;
+}
+.service-icon-img {
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.all-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 36px;
+}
+
+.service {
+  column-gap: 22px;
+  display: flex;
+  flex-direction: row;
+}
+.service-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 20px;
+}
+.scratch-icon {
+  height: 100%;
+  width: 100%;
+}

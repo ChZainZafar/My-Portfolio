@@ -1,0 +1,100 @@
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 80000px;
+  border: 6px solid rgb(87, 85, 85);
+  margin-top: 20px;
+  object-fit: cover;
+}
+.side-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-but {
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s;
+  padding-bottom: 12px;
+}
+.app-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav-options {
+  margin-top: 30px;
+  font-size: 16px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.main-username {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.nav-icons {
+  width: 26px;
+  height: 26px;
+}
+
+.nav-item {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  color: rgb(203, 201, 201);
+}
+
+#nav-item-home:hover .nav-text,
+#nav-item-about:hover .nav-text,
+#nav-item-resume:hover .nav-text,
+#nav-item-portfolio:hover .nav-text,
+#nav-item-services:hover .nav-text,
+#nav-item-contact:hover .nav-text {
+  color: white;
+}
+
+#about-section:active {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a:is(:link, :active, :visited).active {
+  color: white;
+}
+
+.ifHighlight {
+  color: white;
+}
+
+.app-but:hover {
+  height: 26px;
+  width: 26px;
+}

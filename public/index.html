@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<!-- Me as a programmer:<br /> -->
+<!-- I have alot of experince in Java as it was my first language
+                from which i started my journey. I am working on Javascript through
+                a course. later on I will build projects of Javascript. some of
+                other languages/tools i learned includes html,css and scratch -->
+<html>
+  <head>
+    <title>Zain Portfolio</title>
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="section-about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="section-resume.css" />
+    <link rel="stylesheet" href="section-portfolio.css" />
+    <link rel="stylesheet" href="section-services.css" />
+    <link rel="stylesheet" href="section-testimonials.css" />
+    <link rel="stylesheet" href="section-contact.css" />
+    <link rel="stylesheet" href="script.js" />
+    <link rel="stylesheet" href="functions\index.js" />
+    <script src="script.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="side-profile">
+        <img src="assets/img/profile-icon.png" alt="" class="profile-photo" />
+        <p class="main-username">Ch Zain</p>
+      </div>
+
+      <div class="app-links">
+        <a href="https://twitter.com/mzainzafar19" target="_blank">
+          <img src="assets/img/icons/twitter.png" alt="" class="app-but" />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100085650969228"
+          target="_blank"
+        >
+          <img src="assets/img/icons/facebook.png" alt="" class="app-but" />
+        </a>
+        <a href="https://www.instagram.com/chzain.me" target="_blank">
+          <img src="assets/img/icons/instagram.png" alt="" class="app-but" />
+        </a>
+        <a href="https://join.skype.com/invite/ubn6NocHT9vX" target="_blank">
+          <img src="assets/img/icons/skype.png" alt="" class="app-but" />
+        </a>
+        <a href="https://www.linkedin.com/in/ch-zain-zafar/" target="_blank">
+          <img src="assets/img/icons/linkedin.png" alt="" class="app-but" />
+        </a>
+
+        <a href="https://zainworkspace-19.slack.com" target="_blank">
+          <img
+            src="assets/img/icons/slack.png"
+            alt=""
+            class="app-but slack-social-btn"
+          />
+        </a>
+      </div>
+
+      <div class="nav-options">
+        <a href="#hero" class="link">
+          <div class="nav-item" id="nav-item-home">
+            <img
+              src="assets\img\icons\home-icon.png"
+              alt="home-icon"
+              class="nav-icons"
+            />
+            <div class="home-option nav-home nav-text">Home</div>
+          </div>
+        </a>
+
+        <a href="#about-section" class="link">
+          <div class="nav-item" id="nav-item-about">
+            <img
+              src="assets\img\icons\profile-icon.png"
+              alt="about-icon"
+              class="nav-icons"
+            />
+            <div class="about-option nav-text">About</div>
+          </div>
+        </a>
+
+        <a href="#resume-section" class="link">
+          <div class="nav-item" id="nav-item-resume">
+            <img
+              src="assets\img\icons\resume-icon.png"
+              alt="resume-icon"
+              class="nav-icons"
+            />
+            <div class="resume-option nav-text">Resume</div>
+          </div>
+        </a>
+
+        <a href="#portfolio-section" class="link">
+          <div class="nav-item" id="nav-item-portfolio">
+            <img
+              src="assets\img\icons\portfolio-icon.png"
+              alt="portfolio-icon"
+              class="nav-icons"
+            />
+            <div class="portfolio-option nav-text">Portfolio</div>
+          </div>
+        </a>
+
+        <a href="#section-services" class="link">
+          <div class="nav-item" id="nav-item-services">
+            <img
+              src="assets\img\icons\services-icon.png"
+              alt="services-icon"
+              class="nav-icons"
+            />
+            <div class="services-option nav-text">Services</div>
+          </div>
+        </a>
+
+        <a href="#section-contact" class="link">
+          <div class="nav-item" id="nav-item-contact">
+            <img
+              src="assets\img\icons\contact-icon.png"
+              alt="contact-icon"
+              class="nav-icons"
+            />
+            <div class="contact-option nav-text">Contact</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <section class="big-hero-section">
+      <div id="hero" class="section-home">
+        <img
+          src="assets\img\profile-img.jpg"
+          alt=""
+          class="section-1-profile-photo"
+        />
+        <div class="section-1-text">
+          <div class="section-1-name">Ch Zain</div>
+
+          <div class="i-am-a">I'm Programmer</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="all-sections">
+      <section class="big-about-section">
+        <div class="section-about section" id="about-section">
+          <p class="heading">About</p>
+          <div class="line"></div>
+          <p style="font-size: 17px">
+            Hello everyone! I am Ch Zain here. I have started programming a few
+            months ago. I have made this portfolio totally by myself. This will
+            include everything you should know about me and even you can contact
+            me. So lets start!
+          </p>
+
+          <div class="web-developer-info">
+            <div class="col-1">
+              <img
+                src="assets/img/profile-icon.png"
+                alt=""
+                class="section-about-profile-picture"
+              />
+            </div>
+
+            <div class="col-2">
+              <div class="sub-heading">Web Developer & Programmer.</div>
+              <div class="italicized" style="margin-top: 8px">
+                I'm Zain, I am from Lahore, Pakistan. I am in class 8 and I am
+                studying in Fazaia Inter Collage lahore. In some years I hope so
+                you will find me as a top class developer.
+              </div>
+
+              <div class="my-info-grid">
+                <p>
+                  <span class="sub-sub-heading-black">Birthday:</span> 11 Jan
+                  2022
+                </p>
+                <p><span class="sub-sub-heading-black">Age:</span> 12</p>
+                <p>
+                  <span class="sub-sub-heading-black">Website:</span> My
+                  Portfolio
+                </p>
+                <p>
+                  <span class="sub-sub-heading-black">Degree:</span> In-School
+                </p>
+                <p>
+                  <span class="sub-sub-heading-black">Phone:</span> 0333-5527782
+                </p>
+                <p>
+                  <span class="sub-sub-heading-black">e-mail:</span>
+                  chzainzafar19@gmail.com
+                </p>
+                <p><span class="sub-sub-heading-black">city:</span> Lahore</p>
+                <p>
+                  <span class="sub-sub-heading-black"
+                    >School certificates:</span
+                  >
+                  6
+                </p>
+              </div>
+
+              <p>
+                Above information was my basic info you should know.<br />
+                I am a passionate beginner freelancer bringing you programming
+                and design from the future. I am working on developing web
+                including full front end design. I am also spending time on
+                programming languages like Java and Javascript.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="parent-skills">
+          <div class="skills">
+            <div class="heading">Skills</div>
+            <div class="line"></div>
+            <div>
+              i learned Java for almost 3 months. I took the help from W3school
+              website. Now i am learning javaScript through a detailed course. I
+              also have skills in html and css and it will be more than enough
+              to make a webpage/website. 1 year ago I also practiced Scratch and
+              build some small projects on Scratch. I am also active in tools
+              like Firebase, Github.
+            </div>
+
+            <div class="my-progress">
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">HTML</p>
+                  <p class="small-black-heading">90%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-html"></div>
+                </div>
+              </div>
+
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">CSS</p>
+                  <p class="small-black-heading">85%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-css"></div>
+                </div>
+              </div>
+
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">JS</p>
+                  <p class="small-black-heading">70%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-js"></div>
+                </div>
+              </div>
+
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">JAVA</p>
+                  <p class="small-black-heading">98%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-java"></div>
+                </div>
+              </div>
+
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">FIREBASE</p>
+                  <p class="small-black-heading">5%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-react"></div>
+                </div>
+              </div>
+
+              <div class="html-container">
+                <div class="progression-info">
+                  <p class="small-black-heading">Scratch</p>
+                  <p class="small-black-heading">60%</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progression-scratch"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="big-resume-section">
+        <div
+          class="section-resume section"
+          style="font-size: 14px"
+          id="resume-section"
+        >
+          <div class="heading">Resume</div>
+          <div class="line"></div>
+          <p>
+            Now you will see some of my detailed information which will be
+            enough to satisfy you in future that I will be a good choice if you
+            want a someone for your web/android apps. This section includes
+            stuff like my education , experience and some other things
+          </p>
+          <div class="personal-info">
+            <div class="summary" style="margin-left: 20px">
+              <div class="sub-heading-black">Summary</div>
+              <div class="info">
+                <div
+                  class="sub-sub-heading-black timeline-heading"
+                  style="margin-top: 18px"
+                >
+                  CH ZAIN ZAFAR
+                </div>
+                <p
+                  class="italicized"
+                  style="font-size: 15px; line-height: 18px"
+                >
+                  I am a 12 year old boy, having 4 siblings. My hobbies includes
+                  reading novels, playing outdoor games. I also like to play
+                  video games. I spend 4 hours for my schoolwork, and the
+                  remaining time is put on coding.
+                </p>
+                <ul style="margin-left: 0px; line-height: 25px">
+                  <li>School : Fazaia Inter Collage Lahore</li>
+                  <li>DOB : 11-01-2010</li>
+                  <li>PhoneNo : 03335527782</li>
+                </ul>
+              </div>
+
+              <div class="sub-heading-black">Education</div>
+              <div class="info">
+                <div
+                  class="sub-sub-heading-black timeline-heading"
+                  style="margin-top: 18px"
+                >
+                  Currently
+                </div>
+                <div class="year">2013-Present</div>
+                <div class="italicized">Ch Zain, In class 8, In FIC Lahore</div>
+                <p style="margin-bottom: 30px">
+                  My experience till now as a student in FIC Lahore was
+                  superb!<br />
+                  I am spending enough time on studies, but still i managed my
+                  studies pretty well. I got 1st position in last final exams.
+                </p>
+              </div>
+
+              <div class="info">
+                <div class="sub-sub-heading-black timeline-heading">Future</div>
+                <div class="year">2023-2030</div>
+                <div class="italicized">
+                  Ch Zain, from class 9, In FIC Lahore
+                </div>
+                <p>
+                  As in our school the student get the opportunity to decide his
+                  field in class 9, and I am in class 8, Still i have plans for
+                  my future that i would be a Software Engineer as i have great
+                  interest in making web apps and android apps.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience">
+              <div class="sub-heading-black">Experience</div>
+              <div class="info">
+                <div
+                  class="sub-sub-heading-black timeline-heading"
+                  style="margin-top: 18px"
+                >
+                  Apprentice Programmer
+                </div>
+                <div class="year">2022-Present</div>
+                <div class="italicized">Me as a programmer:</div>
+                <ul>
+                  <li style="margin-bottom: 12px">
+                    I have alot of experince in Java as it was my first language
+                    from which i started my journey. I am working on Javascript
+                    through a course. Later on I will build projects of
+                    Javascript. Some of other languages/tools i learned includes
+                    html,css and scratch
+                  </li>
+                  <li style="margin-bottom: 12px">
+                    My brother (Aqeel Zafar) guides me alot about programming
+                    and makes me stable enough to build this website
+                  </li>
+                  <li style="margin-bottom: 12px">
+                    I am doing my work with great effort and interest, and hope
+                    so this effort will be a juicy fruit in coming days.
+                  </li>
+                  <li>
+                    I have very few clients today but in a few months I will be
+                    a good Software Engineer.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="info">
+                <div class="sub-sub-heading-black timeline-heading">
+                  School Student
+                </div>
+                <div class="year">2014-2027</div>
+
+                <div class="italicized">FIC lahore, Pakistan</div>
+
+                <ul>
+                  <li style="margin-bottom: 12px">
+                    I am currently in class 8. I got 98% in my last exams.
+                  </li>
+                  <li style="margin-bottom: 12px">
+                    I am able to manage my studies. I dont leave anything for
+                    tomorrow and this helps me alot.
+                  </li>
+                  <li style="margin-bottom: 12px">
+                    I am a well mannered student, I respect all teachers, elders
+                    and everyone else in my school
+                  </li>
+                  <li>
+                    i have gotten 6 certificates for taking position in
+                    activities like speech, painting etc. I have gotten 3
+                    scholarships till now for my good result in exams.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="big-portfolio-section">
+        <div
+          class="parent-portfolio-section"
+          style="background-color: rgb(230, 252, 252); padding-bottom: 40px"
+        >
+          <div
+            class="section-portfolio portfolio section"
+            id="portfolio-section"
+          >
+            <div class="heading">Portfolio</div>
+            <div class="line"></div>
+            <p style="font-size: 14px">
+              This section inclides all the projects i have done till now. These
+              projects are of javaScript and html only but later on I will
+              upload the other projects too.<br />
+            </p>
+            <!-- <div class="project-categories">
+              <p>All</p>
+              <p>JAVA</p>
+              <p>JS</p>
+              <p>SCRATCH</p>
+            </div> -->
+
+            <div class="portfolio-projects" style="padding-top: 25px">
+              <div class="project">
+                <a
+                  href="https://github.com/ChZainZafar/Modal-window-Project"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/portfolio-1.jpg"
+                    alt=""
+                    id="project-1"
+                    class="project-image"
+                  />
+                </a>
+
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div>
+
+              <div class="project">
+                <a
+                  href="https://github.com/ChZainZafar/word-guessing-game"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/portfolio-2.jpg"
+                    alt=""
+                    id="project-2"
+                    class="project-image"
+                    style="object-fit: cover"
+                  />
+                </a>
+
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div>
+
+              <div class="project">
+                <a
+                  href="https://github.com/ChZainZafar/piggie-roll-it"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/portfolio-3.jfif"
+                    alt=""
+                    id="project-2"
+                    class="project-image"
+                    style="object-fit: cover"
+                  />
+                </a>
+
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div>
+
+              <!-- <div class="project">
+                <img
+                  src="assets/img/portfolio-4.jpg"
+                  alt=""
+                  id="project-4"
+                  class="project-image"
+                  style="object-fit: cover"
+                />
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div> -->
+
+              <!-- <div class="project">
+                <img
+                  src="assets/img/portfolio-5.jfif"
+                  alt=""
+                  id="project-5"
+                  class="project-image"
+                  style="object-fit: cover"
+                />
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div> -->
+
+              <!-- <div class="project">
+                <img
+                  src="assets/img/portfolio-6.jpg"
+                  alt=""
+                  id="project-6"
+                  class="project-image"
+                  style="object-fit: cover"
+                />
+                <div class="project-options">
+                  <img
+                    src="assets/img/zoomin.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                  <img
+                    src="assets/img/attachment.png"
+                    alt=""
+                    class="project-option-icon"
+                  />
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="big-portfolio-section">
+        <div class="section">
+          <div id="section-services">
+            <div class="heading">Services</div>
+            <div class="line"></div>
+            <p style="font-size: 16px; margin-bottom: 30px">
+              Here you will see all the services which i can offer you and work
+              on them for you. It also includes some advantages which you can
+              have if you want me to do your work. These all services are
+              available all the time.
+            </p>
+
+            <div class="all-services">
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/java.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    java projects
+                  </div>
+                  <p class="text" style="margin: 0">
+                    i can build java projects without any UI as i have done many
+                    java projects. These includes todo list, tic tac toe, ludo
+                    etc
+                  </p>
+                </div>
+              </div>
+
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/javascript.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    JavaScript projects
+                  </div>
+                  <p class="text" style="margin: 0">
+                    I can make your javacript projects with UI and without UI. I
+                    also have experience in javaScript and also i am currently
+                    learning more and more js to build much bigger projects
+                  </p>
+                </div>
+              </div>
+
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/support.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    After support
+                  </div>
+                  <p class="text" style="margin: 0">
+                    I can support you and your project even after the project
+                    has been done. I can make small changes to that without any
+                    demand.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/scratch.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    Scratch projects
+                  </div>
+                  <p class="text" style="margin: 0">
+                    I can build some awesome looking Scratch projects for you.
+                    Scratch was my first tool I used to make games.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/html.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    HTML and CSS projects
+                  </div>
+                  <p class="text" style="margin: 0">
+                    I can build some stunning html and css projects for you. let
+                    me tell you that this portfolio is also totally made by me.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service service-1">
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/credit-card-marker.png"
+                    alt=""
+                    class="service-icon-img"
+                  />
+                </div>
+                <div class="service-info">
+                  <div class="sub-sub-heading-black" style="margin: 0">
+                    Delievery on time
+                  </div>
+                  <p class="text" style="margin: 0">
+                    I will deliever any of your project on time given by you.
+                    Its my promise that none of your project will be late and
+                    deliever after the due date.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonials" style="padding: 40px">
+                <div class="heading">Testimonials</div>
+                <div class="line"></div>
+                <p style="font-size: 14px">
+                  Here you will see my satisfied clients. Projects to these were
+                  delievered on time and after support was also offered. they
+                  were really happy with the projects. these are the clients:
+                </p>
+                <div class="all-testimonials">
+                  <div class="all-reviews">
+                    <div class="review">
+                      <p class="review-text">
+                        It was a great time working with Zain. He was really
+                        friendly and cooperative. He build a Javascript project
+                        for me with nice UI. I am really impressed by him and
+                        will give future projects to him too. Recommend him.
+                      </p>
+                      <div class="reviewer-info">
+                        <div class="parent-reviewer-img">
+                          <img
+                            src="assets/img/bhaiAqeel-review.jpg"
+                            alt=""
+                            class="reviewer-img"
+                          />
+                        </div>
+
+                        <div class="reviwer-name-and-job">
+                          <p class="sub-sub-heading-black" style="margin: 0">
+                            Aqeel Zafar
+                          </p>
+                          <p
+                            class="job"
+                            style="
+                              font-size: 14px;
+                              color: rgb(96, 96, 96);
+                              margin: 0;
+                            "
+                          >
+                            Software Engineer
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="review">
+                      <p class="review-text">
+                        Zain is a young passionate developer with great energy.
+                        I saw him putting all of his effort on my project. he
+                        answers me whenever I want any change in my project.
+                      </p>
+                      <div class="reviewer-info">
+                        <div class="parent-reviewer-img">
+                          <img
+                            src="assets/img/apiAmna-review.jpg"
+                            alt=""
+                            class="reviewer-img"
+                          />
+                        </div>
+
+                        <div class="reviwer-name-and-job">
+                          <p class="sub-sub-heading-black" style="margin: 0">
+                            Amna Sumbal
+                          </p>
+                          <p
+                            class="job"
+                            style="
+                              font-size: 14px;
+                              color: rgb(96, 96, 96);
+                              margin: 0;
+                            "
+                          >
+                            Software Engineer
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="review">
+                      <p class="review-text">
+                        I like this young man working. I wasn't really expecting
+                        what he gave to me. really like him
+                      </p>
+                      <div class="reviewer-info">
+                        <div class="parent-reviewer-img">
+                          <img
+                            src="assets/img/profile-photo.jpg"
+                            alt=""
+                            class="reviewer-img"
+                            style="object-fit: cover"
+                          />
+                        </div>
+
+                        <div class="reviwer-name-and-job">
+                          <p class="sub-sub-heading-black" style="margin: 0">
+                            john rellie
+                          </p>
+                          <p
+                            class="job"
+                            style="
+                              font-size: 14px;
+                              color: rgb(96, 96, 96);
+                              margin: 0;
+                            "
+                          >
+                            designer
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="big-portfolio-section">
+        <div id="section-contact">
+          <div class="section">
+            <div class="heading">Contact</div>
+            <div class="line"></div>
+            <p style="font-size: 15px">
+              Here you will find information if in some case you wanna contact
+              me as i have given my personal email and phoneNO. You can also
+              give me comments about the web page that how it is made and you
+              like it or not.
+            </p>
+
+            <div class="email-container">
+              <div class="email-info">
+                <div class="email-info-child">
+                  <div class="email-info-icon">
+                    <img
+                      src="assets/img/icons/location.png"
+                      alt=""
+                      class="email-info-icon-img"
+                    />
+                  </div>
+                  <div class="info-text">
+                    <p
+                      style="
+                        margin-bottom: 0px;
+                        margin-top: 0;
+                        font-size: 20px;
+                        font-weight: bold;
+                      "
+                    >
+                      Location:
+                    </p>
+                    <p style="margin-top: 0px">
+                      Takbeer Home, Phase II on Harbanspura Road Lahore
+                    </p>
+                  </div>
+                </div>
+
+                <div class="email-info-child">
+                  <div class="email-info-icon">
+                    <img
+                      src="assets/img/icons/email.png"
+                      alt=""
+                      class="email-info-icon-img"
+                    />
+                  </div>
+                  <div class="info-text">
+                    <p
+                      style="
+                        margin-bottom: 0px;
+                        margin-top: 0;
+                        font-size: 20px;
+                        font-weight: bold;
+                      "
+                    >
+                      Email:
+                    </p>
+                    <p style="margin-top: 0px">chzainzafar19@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="email-info-child">
+                  <div class="email-info-icon">
+                    <img
+                      src="assets/img/icons/cellphone.png"
+                      alt=""
+                      class="email-info-icon-img"
+                    />
+                  </div>
+                  <div class="info-text">
+                    <p
+                      style="
+                        margin-bottom: 0px;
+                        margin-top: 0;
+                        font-size: 20px;
+                        font-weight: bold;
+                      "
+                    >
+                      Call:
+                    </p>
+                    <p style="margin-top: 0px">0333 5537783</p>
+                  </div>
+                </div>
+
+                <div class="map-container">
+                  <iframe
+                    class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.605518367903!2d74.41606471510666!3d31.562439081355773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190fa572d59239%3A0x85c758e33a67c24a!2sAqeel%20Zafar%20House!5e0!3m2!1sen!2s!4v1664706041505!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="user-email-area">
+                <div class="user-name-and-email">
+                  <div class="user-name">
+                    <label for="name">Your Name</label><br />
+                    <input
+                      type="text"
+                      id="name"
+                      class="email-user-name input-area input-text"
+                    />
+                  </div>
+
+                  <div class="user-email">
+                    <label for="email">Your Email</label><br />
+                    <input
+                      type="email"
+                      id="email"
+                      class="email-input-area input-area input-text"
+                    />
+                  </div>
+                </div>
+
+                <div class="subject">
+                  <label for="subject">Subject</label><br />
+
+                  <input
+                    type="text"
+                    id="subject"
+                    class="subj-input-area input-text"
+                  />
+                </div>
+
+                <div class="message">
+                  <label for="message">Message</label><br />
+                  <textarea
+                    class="text-area input-text"
+                    name=""
+                    id="message"
+                    cols="80"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <div class="parent-message-button">
+                  <button id="message-button" class="message-button">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<!-- const sectionAbout = document.querySelector(".section-about");
+const aboutOption = document.querySelector(".about-option");
+const homeOption = document.querySelector(".home-option");
+const resumeOption = document.querySelector(".about-option");
+const portfolioOption = document.querySelector(".about-option");
+const servicesOption = document.querySelector(".about-option");
+const contactOption = document.querySelector(".about-option");
+
+
+const optionsAbout = {
+  threshold: 0.4,
+};
+
+const aboutIntersectionObserver = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    console.log(entry.target);
+    if (entry.isIntersecting) {
+      // aboutOption.classList.add("ifHighlight");
+      aboutOption.style.color = "white";
+    } else {
+      aboutOption.style.color = "rgb(203, 201, 201)";
+    }
+  });
+}, optionsAbout);
+
+aboutIntersectionObserver.observe(sectionAbout); -->
